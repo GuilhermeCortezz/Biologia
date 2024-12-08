@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Genético - A/a e B/b</title>
+    <!-- Incluindo o Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4">Cálculo Genético - Cruzamento de A/a e B/b</h1>
+            <p class="lead">Simule o cruzamento de alelos e calcule as probabilidades de genótipos.</p>
+        </div>
+
+        <!-- Formulário para entradas dos genes -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Insira os Alelos</h5>
+                        <form id="geneticForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="gene1A" class="form-label">Gene 1A (Primeiro Genitor - A/a):</label>
+                                    <input type="text" class="form-control" id="gene1A" maxlength="1"
+                                        placeholder="A ou a" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="gene1B" class="form-label">Gene 1B (Primeiro Genitor - B/b):</label>
+                                    <input type="text" class="form-control" id="gene1B" maxlength="1"
+                                        placeholder="B ou b" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="gene2A" class="form-label">Gene 2A (Segundo Genitor - A/a):</label>
+                                    <input type="text" class="form-control" id="gene2A" maxlength="1"
+                                        placeholder="A ou a" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="gene2B" class="form-label">Gene 2B (Segundo Genitor - B/b):</label>
+                                    <input type="text" class="form-control" id="gene2B" maxlength="1"
+                                        placeholder="B ou b" required>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Calcular Genótipos</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resultados -->
+        <div id="resultado" class="mt-5">
+            <!-- O conteúdo do resultado será injetado aqui pelo JavaScript -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
